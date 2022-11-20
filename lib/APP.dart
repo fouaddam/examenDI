@@ -1,5 +1,6 @@
 
 
+import 'package:examendi/userManeger/Splash.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,8 @@ class App extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return  MaterialApp(
+
+      initialRoute: '/Splash':Splash(),
 
     );
   }
