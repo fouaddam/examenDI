@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'package:percent_indicator/percent_indicator.dart';
 
+import '../CustomView/AnimationTxt.dart';
+
 class Splash extends StatelessWidget{
   final int duration;
   final  String Go_to;
@@ -30,7 +32,7 @@ class Splash extends StatelessWidget{
             animationDuration: 3000,
             backgroundColor: Colors.purple,
 
-            center: AnimationTxt(),
+            center: const AnimationTxt(),
 
             progressColor: Colors.orange,
           ),

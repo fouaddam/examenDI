@@ -10,9 +10,14 @@ class App extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return  MaterialApp(
 
-      initialRoute: '/Splash':Splash(),
+    return   MaterialApp(
+      initialRoute: '/Splash',
+      routes: {'/Splash':(context)=>Splash(5),
+
+      },
+
+
 
     );
   }
