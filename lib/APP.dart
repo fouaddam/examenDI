@@ -1,5 +1,6 @@
 
 
+import 'package:examendi/Home/ServiceHome.dart';
 import 'package:examendi/userManeger/Login.dart';
 import 'package:examendi/userManeger/Login2.dart';
 import 'package:examendi/userManeger/OnBoarding.dart';
@@ -35,6 +36,7 @@ class App extends StatelessWidget{
         '/Login2':(context)=>Login2(),
         '/Register':(context)=>Register(),
         '/onBoarding':(context)=>onBoarding(),
+        '/ServiceHome1':(context)=>ServiceHome1()
 
 
       },

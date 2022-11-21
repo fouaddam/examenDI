@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 
 
+import '../CustomView/RFButton.dart';
 import '../singelton/DataHolder.dart';
 
 class ServiceHome1 extends StatefulWidget{
@@ -14,10 +15,22 @@ class ServiceHome1 extends StatefulWidget{
   State<ServiceHome1> createState() => _ServiceHome1State();
 }
 
+
+
 class _ServiceHome1State extends State<ServiceHome1> {
+
 
   @override
   Widget build(BuildContext context) {
+
+
+    String func(int index){
+      String sPath="";
+      switch(index){
+        case 1:sPath="/CategoryListPage";break;
+      }
+      return sPath;
+    }
     // TODO: implement build
     return Scaffold(
         appBar: AppBar(
@@ -25,6 +38,13 @@ class _ServiceHome1State extends State<ServiceHome1> {
         ),
         body:Column(
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                RFButton(textButton: "hola",pathImage: 'assets/LoginImage.jpg',nav: func(1))
+              ],
+            )
+
 
           ],
         )

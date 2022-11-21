@@ -6,25 +6,34 @@ import 'package:flutter/material.dart';
 class RFButton extends StatelessWidget{
   final String textButton;
   final String pathImage;
-  final Function(int index) onShortClick;
 
+  final String nav;
 
-  const RFButton({super.key, required this.textButton, required this.pathImage, required this.onShortClick});
+  const RFButton({super.key, required this.textButton, required this.pathImage, required this.nav});
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return OutlinedButton.icon(
+    return  MaterialButton(
+      padding: EdgeInsets.all(8.0),
+      textColor: Colors.white,
+      splashColor: Colors.greenAccent,
+      elevation: 8.0,
+      child: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage(pathImage),
+              fit: BoxFit.cover),
+        ),
+        child: const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text("SIGN OUT"),
+        ),
+      ),
+      // ),
       onPressed: () {
-        onShortClick;
+        Navigator.of(context).popAndPushNamed(nav);
       },
-      icon: Image.asset(pathImage),
-      label: Text(textButton,
-          style: TextStyle(
-          color: Colors.grey[800],
-          fontWeight: FontWeight.bold,
-          fontSize: 40)
-      )
     );
   }
 
