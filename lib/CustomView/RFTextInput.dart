@@ -6,7 +6,7 @@ class RFtextField extends StatelessWidget{
         final TextEditingController textEditingController=TextEditingController();
         final String Label_text;
         final String pathImage;
-         RFtextField({super.key,this.Label_text="", this.pathImage=""});
+         RFtextField({super.key,this.Label_text="", this.pathImage="assets/LoginImage.jpg"});
 
 
           String getText_input(){
@@ -28,7 +28,8 @@ class RFtextField extends StatelessWidget{
 
           ),
       decoration: InputDecoration(
-          icon: const Icon(Icons.favorite),
+
+          //icon: Image.asset(pathImage),
           labelText: Label_text,
           labelStyle: const TextStyle(
               color:Colors.purple,
@@ -36,7 +37,7 @@ class RFtextField extends StatelessWidget{
 
           ),
         helperText: Label_text,
-        suffixIcon: Image.asset(pathImage),
+        //suffixIcon: const Icon(Icons.favorite),
 
 
       ),

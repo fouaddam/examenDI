@@ -17,7 +17,7 @@ class AnimationTxt extends StatelessWidget {
                 fontSize: 30,
                 color: Colors.white,
                 backgroundColor: Colors.transparent)),
-        RotateAnimatedText(text1,
+        RotateAnimatedText(text2,
             textStyle: const TextStyle(
                 letterSpacing: 3,
                 fontSize: 30,

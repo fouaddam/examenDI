@@ -4,12 +4,10 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:proyectofinal/src/FBAdmine/FBAdmine.dart';
-import 'package:proyectofinal/src/models/Service.dart';
-
 import '../FBAdmine/FBAdmine.dart';
 import '../FBItems/ProfilClass.dart';
-import '../models/UsersProfilsClass.dart';
+import '../FBItems/Service.dart';
+
 
 class DataHolder{
 

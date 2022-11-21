@@ -59,107 +59,122 @@ class Login2 extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      body: Stack(
 
+        children:  [
 
-      body: Container(
-        child: Stack(
-
-          children:  [
-
-            Positioned.fill(child: Image.asset('assets/LoginImage.jpg',
-              fit: BoxFit.cover,)),
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  ClipOval(
-                    child: Container(
-                        height: 100,
-                        width: 100,
-                        color: Colors.purple,
-                        alignment: Alignment.center,
-                        child: const Icon(
-                          Icons.lock,
-                          size: 60,
-                          color: Colors.white,
-                          shadows: <Shadow>[
-                            Shadow(
-                              offset: Offset(10.0, 10.0),
-                              blurRadius: 4.0,
-                              color: Color.fromARGB(100, 10, 10, 10),
-                            ),
-                          ],
-                        )
-
-                    ),
-                  ),
-                  SizedBox(height: 60,),
-
-                  Padding(
-                    padding: const EdgeInsets.only(left: 50,right: 70),
-                    child: inputEmail,
-                  ),
-
-                  Padding(
-                    padding: const EdgeInsets.only(left: 50,right: 70),
-                    child: inputPassword,
-                  ),
-                  SizedBox(height: 30),
-
-                  Row(
+          Positioned.fill(child: Image.asset('assets/LoginImage.jpg',
+            fit: BoxFit.cover,)),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 50,right: 50),
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      FloatingActionButton.extended(
-                        backgroundColor:Colors.transparent,
-                        foregroundColor: Colors.white,
-                        onPressed: () {
-                          singIn(context);
-                        },
-                        icon: Icon(Icons.person_search),
-                        label: Text('Login ',
-                          style: TextStyle(
-                              fontSize: 30
-                          ),),
-                      ),
-                      FloatingActionButton.extended(
-                        backgroundColor: Colors.transparent,
-                        foregroundColor: Colors.white,
-                        onPressed: () {
+                    crossAxisAlignment: CrossAxisAlignment.center,
 
-                          Navigator.of(context).popAndPushNamed("/Login");
-                        },
-                        icon: Icon(Icons.power_settings_new),
-                        label: Text('Salir ',
-                          style: TextStyle(
-                              fontSize: 30
-                          ),),
+                    children: <Widget>[
+                      Container(
+                        height: 40.0,
+                        width: 40.0,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                                'assets/LoginImage.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                          shape: BoxShape.circle,
+                        ),
                       ),
+                      const SizedBox(width: 30,),
+                      Expanded(child: inputEmail),
                     ],
                   ),
-                  const SizedBox(height: 20,),
+                )
+                ,
+                const SizedBox(height: 30),
+            Padding(
+              padding: const EdgeInsets.only(left: 50,right: 50),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
 
-                  TextButton(
-                    onPressed: () {
-                      Navigator.of(context).popAndPushNamed('/Register');
-                    },
-                    child:  Text("Registrate ahora ",
-                      style: TextStyle(
-                          color:Colors.purple,
-                          fontSize: 20
-
+                children: <Widget>[
+                  Container(
+                    height: 40.0,
+                    width: 40.0,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(
+                            'assets/LoginImage.jpg'),
+                        fit: BoxFit.cover,
                       ),
+                      shape: BoxShape.circle,
                     ),
-                  )
-
-
+                  ),
+                  const SizedBox(width: 30,),
+                  Expanded(child: inputPassword),
                 ],
               ),
+            )
+            ,
+                const SizedBox(height: 30),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FloatingActionButton.extended(
+                      backgroundColor:Colors.transparent,
+                      foregroundColor: Colors.white,
+                      onPressed: () {
+                        singIn(context);
+                      },
+                      icon: const Icon(Icons.person_search),
+                      label: const Text('Login ',
+                        style: TextStyle(
+                            fontSize: 30
+                        ),),
+                    ),
+                    FloatingActionButton.extended(
+                      backgroundColor: Colors.transparent,
+                      foregroundColor: Colors.white,
+                      onPressed: () {
+
+                        Navigator.of(context).popAndPushNamed("/Login");
+                      },
+                      icon: const Icon(Icons.power_settings_new),
+                      label: const Text('Salir ',
+                        style: TextStyle(
+                            fontSize: 30
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20,),
+
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).popAndPushNamed('/Register');
+                  },
+                  child:  Text("Registrate ahora ",
+                    style: TextStyle(
+                        color:Colors.purple,
+                        fontSize: 20
+
+                    ),
+                  ),
+                )
+
+
+              ],
             ),
+          ),
 
-          ],
-        ),
-
+        ],
       ),
 
 
