@@ -4,19 +4,20 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class AnimationTxt extends StatelessWidget {
-  const AnimationTxt({super.key});
+  final String text1,text2;
+  const AnimationTxt({super.key, required this.text1, required this.text2});
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return AnimatedTextKit(
       animatedTexts: [
-        RotateAnimatedText('DAM1',
+        RotateAnimatedText(text1,
             textStyle: const TextStyle(
                 fontSize: 30,
                 color: Colors.white,
                 backgroundColor: Colors.transparent)),
-        RotateAnimatedText('APP',
+        RotateAnimatedText(text1,
             textStyle: const TextStyle(
                 letterSpacing: 3,
                 fontSize: 30,

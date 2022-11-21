@@ -29,13 +29,13 @@ class Login extends StatelessWidget{
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   ClipOval(
                     child: Container(
                         width: 180,
                         height: 180,
                         color: Colors.transparent,
-                        child: Icon(
+                        child: const Icon(
                           Icons.ad_units,
                           size: 100,
                           color: Colors.white,
@@ -50,13 +50,8 @@ class Login extends StatelessWidget{
                     AnimatedTextKit(
                       animatedTexts: [
                         WavyAnimatedText('bienvenido ',
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               color: Colors.blue,
-                              fontSize: 30,
-                            )),
-                        WavyAnimatedText('a My App',
-                            textStyle: TextStyle(
-                              color: Colors.purple[600],
                               fontSize: 30,
                             )),
                       ],
@@ -64,8 +59,8 @@ class Login extends StatelessWidget{
                     ),
                   ),
                   SizedBox(height: 10),
-                  Text("la mejor comida \n    para llevar "),
-                  SizedBox(height: 40),
+
+
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -78,8 +73,8 @@ class Login extends StatelessWidget{
                           Navigator.of(context).pushNamed('/Login2');
 
                         },
-                        icon: Icon(Icons.account_circle_rounded),
-                        label: Text('Login ',
+                        icon: const Icon(Icons.account_circle_rounded),
+                        label: const Text('Login ',
                           style: TextStyle(
                               fontSize: 30
                           ),),
@@ -91,8 +86,8 @@ class Login extends StatelessWidget{
                           Navigator.of(context).pop();
 
                         },
-                        icon: Icon(Icons.account_circle_rounded),
-                        label: Text('Salir ',
+                        icon: const Icon(Icons.account_circle_rounded),
+                        label: const Text('Salir ',
                           style: TextStyle(
                               fontSize: 30
                           ),),

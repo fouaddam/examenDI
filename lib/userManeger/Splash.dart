@@ -32,7 +32,7 @@ class Splash extends StatelessWidget{
             animationDuration: 3000,
             backgroundColor: Colors.purple,
 
-            center: const AnimationTxt(),
+            center: const AnimationTxt(text1:"Examen",text2: "D.I"),
 
             progressColor: Colors.orange,
           ),
