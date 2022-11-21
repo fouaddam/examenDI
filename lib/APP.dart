@@ -1,5 +1,9 @@
 
 
+import 'package:examendi/userManeger/Login.dart';
+import 'package:examendi/userManeger/Login2.dart';
+import 'package:examendi/userManeger/OnBoarding.dart';
+import 'package:examendi/userManeger/Registro.dart';
 import 'package:examendi/userManeger/Splash.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -23,7 +27,13 @@ class App extends StatelessWidget{
     return   MaterialApp(
       initialRoute: '/Splash',
       routes: {
-        '/Splash':(context)=>Splash(duration: 5, Go_to: initialRoute())
+        '/Splash':(context)=>Splash(duration: 5, Go_to: initialRoute()),
+        '/Login':(context)=>Login(),
+        '/CategoryListPage':(context)=>CategoryListPage(),
+        '/Login2':(context)=>Login2(),
+        '/Register':(context)=>Register(),
+        '/onBoarding':(context)=>onBoarding(),
+        '/ServiceHome1':(context)=>ServiceHome1()
 
       },
 

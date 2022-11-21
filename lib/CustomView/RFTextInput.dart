@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 
 class RFtextField extends StatelessWidget{
 
-        final TextEditingController textEditingController=new TextEditingController();
+        final TextEditingController textEditingController=TextEditingController();
         final String Label_text;
-
-         RFtextField({super.key, this.Label_text=""});
+        final String pathImage;
+         RFtextField({super.key,this.Label_text="", this.pathImage=""});
 
 
           String getText_input(){
@@ -28,17 +28,16 @@ class RFtextField extends StatelessWidget{
 
           ),
       decoration: InputDecoration(
-          icon: Icon(Icons.favorite),
+          icon: const Icon(Icons.favorite),
           labelText: Label_text,
-          labelStyle: TextStyle(
+          labelStyle: const TextStyle(
               color:Colors.purple,
               fontSize: 20
 
           ),
         helperText: Label_text,
-        suffixIcon: Icon(
-          Icons.check_circle,
-        ),
+        suffixIcon: Image.asset(pathImage),
+
 
       ),
     );
