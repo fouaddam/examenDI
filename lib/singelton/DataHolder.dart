@@ -12,9 +12,9 @@ import '../models/UsersProfilsClass.dart';
 class DataHolder{
 
       static final DataHolder _dataholder=new DataHolder._internal();
-      ServiceClass serviceClass=new ServiceClass();
-      ProfilClass profilClass=new ProfilClass();
-      FBAdmine fbAdmine=new FBAdmine();
+      ServiceClass serviceClass= ServiceClass();
+      ProfilClass profilClass= ProfilClass();
+      FBAdmine fbAdmine= FBAdmine();
       FirebaseAuth firebaseAuth=FirebaseAuth.instance;
       FirebaseFirestore firebaseFireStore=FirebaseFirestore.instance;
       String PROFILCOLLECTION="";

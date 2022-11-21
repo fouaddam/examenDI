@@ -11,6 +11,8 @@ import 'package:proyectofinal/src/models/Service.dart';
 import 'package:proyectofinal/src/models/UsersProfilsClass.dart';
 import 'package:proyectofinal/src/singelton/DataHolder.dart';
 
+import '../singelton/DataHolder.dart';
+
 class CategoryListPage extends StatefulWidget{
   @override
   State<CategoryListPage> createState() => _CategoryListPageState();
