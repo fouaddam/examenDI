@@ -9,6 +9,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'Home/ListPage.dart';
+
 class App extends StatelessWidget{
   const App({super.key});
 
@@ -33,7 +35,7 @@ class App extends StatelessWidget{
         '/Login2':(context)=>Login2(),
         '/Register':(context)=>Register(),
         '/onBoarding':(context)=>onBoarding(),
-        '/ServiceHome1':(context)=>ServiceHome1()
+
 
       },
 
