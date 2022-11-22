@@ -1,5 +1,6 @@
 
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +33,7 @@ class RFButton extends StatelessWidget{
       ),
       // ),
       onPressed: () {
-        Navigator.of(context).popAndPushNamed(nav);
+        FirebaseAuth.instance.signOut();
       },
     );
   }

@@ -66,13 +66,8 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-
-
       body: Container(
-
-
         child: Stack(
-
           children: [
 
             Positioned.fill(child: Image.asset('assets/LoginImage.jpg',

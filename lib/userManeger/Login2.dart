@@ -138,12 +138,31 @@ class Login2 extends StatelessWidget{
 
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children:  [
                     Padding(
-                      padding: EdgeInsets.only(right: 20),
-                      child: RFFloatButton(sRuta: "/Login",sText: "Login",iconData:Icons.account_circle),
+                      padding: const EdgeInsets.only(right: 20),
+                      child: Container(
+                        decoration:  const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/Splash.jpg"),
+                              fit: BoxFit.cover),
+                        ),
+                        child: FloatingActionButton.extended(
+                          backgroundColor: Colors.transparent,
+                          foregroundColor: Colors.white,
+                          onPressed: () {
+                            singIn(context);
+                          },
+                          icon:  const Icon(Icons.account_circle),
+                          label:  const Text("Login",
+                            style: TextStyle(
+                                fontSize: 35
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                    RFFloatButton(sRuta: "/Login",sText: "Salir",iconData:Icons.power_settings_new)
+                      const RFFloatButton(sRuta: "/Login",sText: "Salir",iconData:Icons.power_settings_new)
 
                   //  Login
                   ],
