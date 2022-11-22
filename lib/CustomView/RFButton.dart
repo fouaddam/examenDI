@@ -9,7 +9,7 @@ class RFButton extends StatelessWidget{
 
   final String nav;
 
-  const RFButton({super.key, required this.textButton, required this.pathImage, required this.nav});
+   const RFButton({super.key, required this.textButton, required this.pathImage, required this.nav});
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +25,9 @@ class RFButton extends StatelessWidget{
               image: AssetImage(pathImage),
               fit: BoxFit.cover),
         ),
-        child: const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Text("SIGN OUT"),
+        child:  Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(textButton),
         ),
       ),
       // ),

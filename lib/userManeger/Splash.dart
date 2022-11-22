@@ -22,23 +22,40 @@ class Splash extends StatelessWidget{
     // TODO: implement build
     return Scaffold(
         backgroundColor:Colors.white24,
-        body:Center(
+        body:Container(
 
-          child:  CircularPercentIndicator(
-            radius: 120.0,
-            lineWidth:30.0 ,
-            percent: 100/100,
-            animation: true,
-            animationDuration: 3000,
-            backgroundColor: Colors.purple,
+          color: Colors.black12,
+          child: Stack(
 
-            center: const AnimationTxt(text1:"Examen",text2: "D.I"),
+            children:  [
 
-            progressColor: Colors.orange,
+              Positioned.fill(child: Image.asset('assets/Splash.jpg',
+                fit: BoxFit.fill,)),
+              Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    CircularPercentIndicator(
+                      radius: 120.0,
+                      lineWidth:30.0 ,
+                      percent: 100/100,
+                      animation: true,
+                      animationDuration: 3000,
+                      backgroundColor: Colors.purple,
+
+                      center: const AnimationTxt(text1:"Examen",text2: "D.I"),
+
+                      progressColor: Colors.orange,
+                    ),
+                  ],
+                ),
+              ),
+
+            ],
           ),
 
-
-        )
+        ),
 
     );
 

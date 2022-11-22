@@ -41,7 +41,7 @@ class _ServiceHome1State extends State<ServiceHome1> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                RFButton(textButton: "hola",pathImage: 'assets/LoginImage.jpg',nav: func(1))
+                RFButton(textButton: "hola",pathImage:'assets/Splash.jpg',nav: func(1))
               ],
             )
 
