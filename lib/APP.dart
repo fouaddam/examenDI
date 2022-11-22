@@ -28,7 +28,7 @@ class App extends StatelessWidget{
     // TODO: implement build
 
     return   MaterialApp(
-      initialRoute: '/Splash',
+      initialRoute: '/Login',
       routes: {
         '/Splash':(context)=>Splash(duration: 5, Go_to: initialRoute()),
         '/Login':(context)=>Login(),

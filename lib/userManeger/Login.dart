@@ -22,14 +22,12 @@ class Login extends StatelessWidget{
 
           children:  [
 
-            Positioned.fill(child: Image.asset('assets/LoginImage.jpg',
-              fit: BoxFit.cover,)),
+            Positioned.fill(child: Image.asset('assets/Login2.jpg',
+              fit: BoxFit.fill,)),
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const SizedBox(height: 10,),
                   ClipOval(
                     child: Container(
                         width: 180,
@@ -49,10 +47,11 @@ class Login extends StatelessWidget{
                     child:
                     AnimatedTextKit(
                       animatedTexts: [
-                        WavyAnimatedText('bienvenido ',
+                        WavyAnimatedText('English App ',
                             textStyle: const TextStyle(
-                              color: Colors.blue,
-                              fontSize: 30,
+                              color: Colors.red,
+
+                              fontSize: 60,
                             )),
                       ],
                       repeatForever: true,
@@ -66,28 +65,31 @@ class Login extends StatelessWidget{
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
 
-                      FloatingActionButton.extended(
-                        backgroundColor:Colors.transparent,
-                        foregroundColor: Colors.white,
-                        onPressed: () {
-                          Navigator.of(context).pushNamed('/Login2');
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: FloatingActionButton.extended(
+                          backgroundColor:Colors.black,
+                          foregroundColor: Colors.white,
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('/Login2');
 
-                        },
-                        icon: const Icon(Icons.account_circle_rounded),
-                        label: const Text('Login ',
-                          style: TextStyle(
-                              fontSize: 30
-                          ),),
+                          },
+                          icon: const Icon(Icons.account_circle_rounded),
+                          label: const Text('Login ',
+                            style: TextStyle(
+                                fontSize: 30
+                            ),),
+                        ),
                       ),
                       FloatingActionButton.extended(
-                        backgroundColor:Colors.transparent,
+                        backgroundColor:Colors.black,
                         foregroundColor: Colors.white,
                         onPressed: () {
                           Navigator.of(context).pop();
 
                         },
                         icon: const Icon(Icons.account_circle_rounded),
-                        label: const Text('Salir ',
+                        label: const Text('Exit ',
                           style: TextStyle(
                               fontSize: 30
                           ),),
@@ -101,9 +103,9 @@ class Login extends StatelessWidget{
                     onPressed: () {
                       Navigator.of(context).popAndPushNamed('/Register');
                     },
-                    child: const Text("Registrate ahora "
+                    child: const Text("Register Now "
                       ,style: TextStyle(
-                          color: Colors.purple,
+                          color: Colors.black,
                           fontSize: 20
                       ),),
                   )

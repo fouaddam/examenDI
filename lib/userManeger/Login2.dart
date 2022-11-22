@@ -6,6 +6,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../CustomView/RFFloatButton.dart';
 import '../CustomView/RFTextInput.dart';
 
 
@@ -63,13 +64,25 @@ class Login2 extends StatelessWidget{
 
         children:  [
 
-          Positioned.fill(child: Image.asset('assets/LoginImage.jpg',
+          Positioned.fill(child: Image.asset('assets/Login2.jpg',
             fit: BoxFit.cover,)),
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                ClipOval(
+                  child: Container(
+                      width: 180,
+                      height: 180,
+                      color: Colors.transparent,
+                      child: const Icon(
+                        Icons.account_box_outlined,
+                        size: 50,
+                        color: Colors.white,
+                      )
+
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(left: 50,right: 50),
                   child: Row(
@@ -83,7 +96,7 @@ class Login2 extends StatelessWidget{
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
-                                'assets/LoginImage.jpg'),
+                                'assets/Splash.jpg'),
                             fit: BoxFit.cover,
                           ),
                           shape: BoxShape.circle,
@@ -109,7 +122,7 @@ class Login2 extends StatelessWidget{
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage(
-                            'assets/LoginImage.jpg'),
+                            'assets/Splash.jpg'),
                         fit: BoxFit.cover,
                       ),
                       shape: BoxShape.circle,
@@ -125,33 +138,14 @@ class Login2 extends StatelessWidget{
 
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FloatingActionButton.extended(
-                      backgroundColor:Colors.transparent,
-                      foregroundColor: Colors.white,
-                      onPressed: () {
-                        singIn(context);
-                      },
-                      icon: const Icon(Icons.person_search),
-                      label: const Text('Login ',
-                        style: TextStyle(
-                            fontSize: 30
-                        ),),
+                  children: const [
+                    Padding(
+                      padding: EdgeInsets.only(right: 20),
+                      child: RFFloatButton(sRuta: "/Login",sText: "Login",iconData:Icons.account_circle),
                     ),
-                    FloatingActionButton.extended(
-                      backgroundColor: Colors.transparent,
-                      foregroundColor: Colors.white,
-                      onPressed: () {
+                    RFFloatButton(sRuta: "/Login",sText: "Salir",iconData:Icons.power_settings_new)
 
-                        Navigator.of(context).popAndPushNamed("/Login");
-                      },
-                      icon: const Icon(Icons.power_settings_new),
-                      label: const Text('Salir ',
-                        style: TextStyle(
-                            fontSize: 30
-                        ),
-                      ),
-                    ),
+                  //  Login
                   ],
                 ),
                 const SizedBox(height: 20,),
@@ -160,7 +154,7 @@ class Login2 extends StatelessWidget{
                   onPressed: () {
                     Navigator.of(context).popAndPushNamed('/Register');
                   },
-                  child:  Text("Registrate ahora ",
+                  child:  const Text("Registrate ahora ",
                     style: TextStyle(
                         color:Colors.purple,
                         fontSize: 20

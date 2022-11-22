@@ -14,13 +14,13 @@ class AnimationTxt extends StatelessWidget {
       animatedTexts: [
         RotateAnimatedText(text1,
             textStyle: const TextStyle(
-                fontSize: 30,
+                fontSize: 50,
                 color: Colors.white,
                 backgroundColor: Colors.transparent)),
         RotateAnimatedText(text2,
             textStyle: const TextStyle(
                 letterSpacing: 3,
-                fontSize: 30,
+                fontSize: 50,
                 fontWeight: FontWeight.bold,
                 color: Colors.orange)),
 
