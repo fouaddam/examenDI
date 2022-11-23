@@ -11,9 +11,9 @@ import '../CustomView/RFTextInput.dart';
 class Register extends StatelessWidget {
 
 
-  final RFtextField inputEmail = RFtextField();
-  final RFtextField inputPassword = RFtextField();
-  final RFtextField inputPassword2 = RFtextField();
+  final RFtextField inputEmail = RFtextField(Label_text:"Email");
+  final RFtextField inputPassword = RFtextField(Label_text:"Password");
+  final RFtextField inputPassword2 = RFtextField(Label_text: "Repite Password",);
 
   Register({super.key});
 
@@ -102,17 +102,17 @@ class Register extends StatelessWidget {
 
 
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 50, right: 50),
                     child: inputEmail,
                   ),
 
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 50, right: 50),
                     child: inputPassword,
 
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 50, right: 50),
                     child: inputPassword2,
                   ),
                   SizedBox(height: 20),

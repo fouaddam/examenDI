@@ -21,7 +21,7 @@ class RFtextField extends StatelessWidget{
     return  TextFormField(
           controller: textEditingController,
           cursorColor: Colors.white,
-          maxLength: 20,
+
           style: const TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -36,7 +36,7 @@ class RFtextField extends StatelessWidget{
               fontSize: 20
 
           ),
-        helperText: Label_text,
+
         //suffixIcon: const Icon(Icons.favorite),
 
 

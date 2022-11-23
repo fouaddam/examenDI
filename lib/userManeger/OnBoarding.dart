@@ -12,9 +12,9 @@ import '../FBItems/ProfilClass.dart';
 class onBoarding extends StatelessWidget {
 
 
-  final RFtextField name = RFtextField();
-  final RFtextField edad = RFtextField();
-  final RFtextField pais = RFtextField();
+  final RFtextField name = RFtextField(Label_text:"Name");
+  final RFtextField edad = RFtextField(Label_text:"Age");
+  final RFtextField pais = RFtextField(Label_text:"Country");
 
 
   final String? id_user=FirebaseAuth.instance.currentUser?.uid;
@@ -78,17 +78,17 @@ class onBoarding extends StatelessWidget {
                   const SizedBox(height: 10,),
 
                   Padding(
-                    padding: const EdgeInsets.only(left: 30, right: 30),
+                    padding: const EdgeInsets.only(left: 50, right: 50),
                     child: name,
                   ),
                   SizedBox(height: 10,),
                   Padding(
-                    padding: const EdgeInsets.only(left: 30, right: 30),
+                    padding: const EdgeInsets.only(left: 50, right: 50),
                     child: pais,
                   ),
                   SizedBox(height: 10),
                   Padding(
-                    padding: const EdgeInsets.only(left: 30, right: 30),
+                    padding: const EdgeInsets.only(left: 50, right: 50),
                     child: edad,
                   ),
                   SizedBox(height: 10),
