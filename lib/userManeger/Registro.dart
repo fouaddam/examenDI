@@ -70,7 +70,7 @@ class Register extends StatelessWidget {
         child: Stack(
           children: [
 
-            Positioned.fill(child: Image.asset('assets/LoginImage.jpg',
+            Positioned.fill(child: Image.asset('assets/Login2.jpg',
               fit: BoxFit.cover,)),
             Center(
               child: Column(

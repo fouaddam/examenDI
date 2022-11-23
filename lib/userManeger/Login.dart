@@ -33,15 +33,12 @@ class Login extends StatelessWidget{
                         width: 180,
                         height: 180,
                         color: Colors.transparent,
-                        child: const Icon(
-                          Icons.ad_units,
-                          size: 100,
-                          color: Colors.white,
-                        )
+                        child: Image.asset("assets/England.png"
+                        ,fit: BoxFit.fill,),
 
                     ),
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child:

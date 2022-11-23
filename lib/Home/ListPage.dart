@@ -151,7 +151,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
               runSpacing: 16,
               children: [
                 DrawerHeader(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Colors.black12
                   ),
                   child: Stack(
@@ -199,7 +199,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
                 ),
 
 
-                SizedBox(height: 40,),
+                const SizedBox(height: 40,),
                 ListTile(
                   leading: const Icon(Icons.home_outlined),
                   title: Text("Sing out"),
@@ -217,30 +217,16 @@ class _CategoryListPageState extends State<CategoryListPage> {
                 ),
 
                 ListTile(
-                  leading: Icon(Icons.home),
-                  title: Text("Back"),
+                  leading: const Icon(Icons.home),
+                  title: const Text("Back"),
                   onTap: (){
                     Navigator.of(context).popAndPushNamed('/CategoryListPage');
                   },
                 ),
 
-                ListTile(
-                  leading: Icon(Icons.home),
-                  title: Text("Back"),
-                  onTap: (){
 
-                    Navigator.of(context).popAndPushNamed('/CategoryListPage');
-                  },
-                ),
 
-                ListTile(
-                  leading: Icon(Icons.home),
-                  title: Text("Back"),
-                  onTap: (){
 
-                    Navigator.of(context).popAndPushNamed('/CategoryListPage');
-                  },
-                )
 
               ],
             ),
@@ -250,12 +236,12 @@ class _CategoryListPageState extends State<CategoryListPage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.deepOrange),
+        iconTheme: const IconThemeData(color: Colors.deepOrange),
         actions: [
           Container(
 
-            margin: EdgeInsets.only(right: 8),
-            padding: EdgeInsets.all(10),
+            margin: const EdgeInsets.only(right: 8),
+            padding: const EdgeInsets.all(10),
             child: ClipOval(
 
               child: Image.asset('assets/comida3.jpg'
@@ -270,10 +256,10 @@ class _CategoryListPageState extends State<CategoryListPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
 
           children:  [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(top: 30,bottom: 10),
 
-              child: Text("Selecione una Categoria ",
+              child: Text("Categories ",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25,
@@ -333,7 +319,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
                                   padding: const EdgeInsets.only(left: 180),
                                   child: Text(listaServicios[index].data().name!,
 
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         color:Colors.deepOrange,
                                         fontSize: 30,
                                         fontWeight: FontWeight.bold

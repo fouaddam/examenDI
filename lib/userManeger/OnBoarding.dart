@@ -56,7 +56,7 @@ class onBoarding extends StatelessWidget {
 
           children: [
 
-            Positioned.fill(child: Image.asset('assets/image1.jpg',
+            Positioned.fill(child: Image.asset('assets/Login2.jpg',
               fit: BoxFit.cover,)),
             Center(
               child: Column(
@@ -78,17 +78,17 @@ class onBoarding extends StatelessWidget {
                   const SizedBox(height: 10,),
 
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 30, right: 30),
                     child: name,
                   ),
                   SizedBox(height: 10,),
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 30, right: 30),
                     child: pais,
                   ),
                   SizedBox(height: 10),
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    padding: const EdgeInsets.only(left: 30, right: 30),
                     child: edad,
                   ),
                   SizedBox(height: 10),
@@ -105,8 +105,8 @@ class onBoarding extends StatelessWidget {
                               insertData(context);
 
                             },
-                            icon: Icon(Icons.account_circle_rounded),
-                            label: Text('    Register    ',
+                            icon: const Icon(Icons.account_circle_rounded),
+                            label: const Text('    Register    ',
                               style: TextStyle(
                                   fontSize: 20
                               ),),
