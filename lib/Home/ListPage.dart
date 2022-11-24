@@ -56,7 +56,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
                 color: Colors.orangeAccent
             ),),
           backgroundColor: Colors.blue,
-          shape: RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(20.0))),
 
 

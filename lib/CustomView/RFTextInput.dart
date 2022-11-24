@@ -6,7 +6,8 @@ class RFtextField extends StatelessWidget{
         final TextEditingController textEditingController=TextEditingController();
         final String Label_text;
         final String pathImage;
-         RFtextField({super.key,this.Label_text="", this.pathImage="assets/LoginImage.jpg"});
+
+         RFtextField({super.key,this.Label_text="", this.pathImage="assets/LoginImage.jpg", });
 
 
           String getText_input(){
@@ -23,7 +24,7 @@ class RFtextField extends StatelessWidget{
           cursorColor: Colors.white,
 
           style: const TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontSize: 20,
 
           ),

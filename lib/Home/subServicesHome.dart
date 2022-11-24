@@ -76,21 +76,30 @@ class _SubServicesHomeState extends State<SubServicesHome> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      body:Stack(
+        appBar: AppBar(
+          title: Text(DataHolder().serviceClass.name!),
+        ),
+      body:Column(
         children: [
+          Container(
+            child: Image.asset("assets/Splash.jpg",fit: BoxFit.cover,),
+          ),
+          Expanded(
+            child:  ListView.builder(
+                    padding: const EdgeInsets.all(8),
+                    itemCount: listSubService.length,
+                    itemBuilder: (BuildContext context, int index) {
+                  return ListItem(name:listSubService[index].data().comment!,onClick:onClick,index:index);
+                  //ListItem({super.key, required this.name, required this.onClick, required this.index});
+                }
+            ),
+          ),
 
-      ListView.builder(
-      padding: const EdgeInsets.all(8),
-        itemCount: listSubService.length,
-        itemBuilder: (BuildContext context, int index) {
-          return ListItem(name:listSubService[index].data().comment!,onClick:onClick,index:index);
-          //ListItem({super.key, required this.name, required this.onClick, required this.index});
-        }
-    ),
           SizedBox(height: 10,),
 
 
           comentario,
+          SizedBox(height: 10,),
           FloatingActionButton.extended(
             onPressed: PressedPressed,
             label: const Text('Send'),
