@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../CustomView/ListItem.dart';
+import '../CustomView/RFTextInput.dart';
 import '../FBItems/SubServices.dart';
 import '../singelton/DataHolder.dart';
 
@@ -20,9 +21,10 @@ class _SubServicesHomeState extends State<SubServicesHome> {
 
   final String Path="/Services/"+DataHolder().serviceClass.Uid!+"/subServices";
   final FirebaseFirestore db=FirebaseFirestore.instance;
+  final RFtextField comentario=RFtextField(Label_text:"Comentario");
 
-  final List<String> entries = <String>['A', 'B', 'C'];
-  final List<int> colorCodes = <int>[600, 500, 100];
+
+
 
   List<QueryDocumentSnapshot<SubServices>> listSubService=[];
 
@@ -78,7 +80,17 @@ class _SubServicesHomeState extends State<SubServicesHome> {
           //ListItem({super.key, required this.name, required this.onClick, required this.index});
         }
     ),
-          const SizedBox(height: 10,),
+          SizedBox(height: 10,),
+
+
+          comentario,
+          FloatingActionButton.extended(
+            onPressed: PressedPressed,
+            label: const Text('Send'),
+            icon: const Icon(Icons.thumb_up),
+            backgroundColor: Colors.pink,
+          ),
+
 
 
 
