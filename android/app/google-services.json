@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "120204644506",
+    "project_id": "examendi-c6bfa",
+    "storage_bucket": "examendi-c6bfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120204644506:android:8cac2140f16f358b734f23",
+        "android_client_info": {
+          "package_name": "com.example.examendi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120204644506-l46s15cbdoc7kapp9jj74iodmvjvcgvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWuEfO2pi4VMaSgZ4xb3BqJS-ZOw8qb4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120204644506-l46s15cbdoc7kapp9jj74iodmvjvcgvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
