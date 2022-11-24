@@ -305,7 +305,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
                             onTap:()  {
 
                               DataHolder().serviceClass=listaServicios[index].data();
-                              Navigator.of(context).pushNamed('/ServiceHome1');
+                              Navigator.of(context).pushNamed('/SubServices');
                             },
                           ),
 

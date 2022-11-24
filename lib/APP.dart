@@ -11,6 +11,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'Home/ListPage.dart';
+import 'Home/subServicesHome.dart';
 
 class App extends StatelessWidget{
   const App({super.key});
@@ -28,7 +29,7 @@ class App extends StatelessWidget{
     // TODO: implement build
 
     return   MaterialApp(
-      initialRoute: '/Splash',
+      initialRoute: '/CategoryListPage',
       routes: {
         '/Splash':(context)=>Splash(duration: 5, Go_to: initialRoute()),
         '/Login':(context)=>Login(),
@@ -36,7 +37,8 @@ class App extends StatelessWidget{
         '/Login2':(context)=>Login2(),
         '/Register':(context)=>Register(),
         '/onBoarding':(context)=>onBoarding(),
-        '/ServiceHome1':(context)=>ServiceHome1()
+        '/ServiceHome1':(context)=>ServiceHome1(),
+        '/SubServices':(context)=>SubServicesHome()
 
 
       },

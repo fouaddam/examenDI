@@ -1,10 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ServiceClass {
+  final String? Uid;
   final String? name;
 
 
-  ServiceClass({
+  ServiceClass( {
+    this.Uid,
     this.name,
 
   });
@@ -16,6 +18,7 @@ class ServiceClass {
     final data = snapshot.data();
     return ServiceClass(
       name: data?['name'],
+        Uid: snapshot.id
     );
 
   }
