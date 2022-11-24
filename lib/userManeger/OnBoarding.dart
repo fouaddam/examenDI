@@ -118,8 +118,8 @@ class onBoarding extends StatelessWidget {
                           onPressed: () {
                             Navigator.of(context).pop();
                           },
-                          icon: Icon(Icons.account_circle_rounded),
-                          label: Text('Salir ',
+                          icon: const Icon(Icons.account_circle_rounded),
+                          label: const Text('Salir ',
                             style: TextStyle(
                                 fontSize: 20
                             ),),
