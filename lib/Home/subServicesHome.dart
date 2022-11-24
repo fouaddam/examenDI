@@ -52,6 +52,13 @@ class _SubServicesHomeState extends State<SubServicesHome> {
 
   }
 
+  void PressedPressed(){
+    final docRef = db.collection(Path);
+    SubServices subServices= SubServices(id_user: DataHolder().profilClass.id,comment:comentario.getText_input(),date: Timestamp.now());
+    docRef.add(subServices.toFirestore());
+
+  }
+
 
   @override
   void initState() {
