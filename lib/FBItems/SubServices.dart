@@ -1,15 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SubServices {
-  final String? author;
+  final String? id_user;
   final String? comment;
-  final Timestamp? time;
+  final Timestamp? date;
 
 
   SubServices({
-    this.author,
+    this.id_user,
     this.comment,
-    this.time,
+    this.date,
 
   });
 
@@ -19,18 +19,18 @@ class SubServices {
       ) {
     final data = snapshot.data();
     return SubServices(
-      author: data?['author'],
-      comment: data?['text'],
-      time: data?['time'],
+      id_user: data?['user_id'],
+      comment: data?['comment'],
+      date: data?['date'],
 
     );
   }
 
   Map<String, dynamic> toFirestore() {
     return {
-      if (author != null) "author": author,
-      if (comment != null) "text": comment,
-      if (time != null) "time": time,
+      if (id_user != null) "user_id": id_user,
+      if (comment != null) "comment": comment,
+      if (date != null) "date": date,
 
     };
   }
