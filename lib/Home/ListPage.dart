@@ -234,7 +234,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
         ),
       ),
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black12,
         elevation: 0.0,
         iconTheme: const IconThemeData(color: Colors.deepOrange),
         actions: [
@@ -244,7 +244,7 @@ class _CategoryListPageState extends State<CategoryListPage> {
             padding: const EdgeInsets.all(10),
             child: ClipOval(
 
-              child: Image.asset('assets/comida3.jpg'
+              child: Image.asset('assets/Fouad.jpg'
                 ,fit: BoxFit.cover,),
             ),
           )
@@ -256,31 +256,34 @@ class _CategoryListPageState extends State<CategoryListPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
 
           children:  [
-            const Padding(
-              padding: EdgeInsets.only(top: 30,bottom: 10),
+            Container(
+              decoration: const BoxDecoration(color: Colors.black12),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 30,bottom: 10),
 
-              child: Text("Categories ",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                  shadows: <Shadow>[
-                    Shadow(
-                      offset: Offset(10.0, 5.0),
-                      blurRadius: 2.0,
-                      color: Color.fromARGB(50, 0, 0, 0),
-                    ),
-                    Shadow(
-                      offset: Offset(10.0, 10.0),
-                      blurRadius: 3.0,
-                      color: Color.fromARGB(50, 0, 0, 50),
-                    ),
-                  ],
+                child: Text("Menu ",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(10.0, 5.0),
+                        blurRadius: 2.0,
+                        color: Color.fromARGB(50, 0, 0, 0),
+                      ),
+                      Shadow(
+                        offset: Offset(10.0, 10.0),
+                        blurRadius: 3.0,
+                        color: Color.fromARGB(50, 0, 0, 50),
+                      ),
+                    ],
 
+                  ),
                 ),
-              ),
 
+              ),
             ),
             Expanded(
 
@@ -316,12 +319,12 @@ class _CategoryListPageState extends State<CategoryListPage> {
                               children:  [
 
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 180),
+                                  padding: const EdgeInsets.only(bottom:30,left: 120),
                                   child: Text(listaServicios[index].data().name!,
 
                                     style: const TextStyle(
-                                        color:Colors.deepOrange,
-                                        fontSize: 30,
+                                        color:Colors.red,
+                                        fontSize: 40,
                                         fontWeight: FontWeight.bold
                                     ),),
                                 ),
