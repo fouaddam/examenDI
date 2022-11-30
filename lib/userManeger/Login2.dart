@@ -14,7 +14,7 @@ class Login2 extends StatelessWidget{
   Login2({Key ? key}):super(key: key);
 
   RFtextField inputEmail=RFtextField(Label_text:"Email");
-  RFtextField inputPassword=RFtextField(Label_text: "Password",);
+  RFtextField inputPassword=RFtextField(Label_text: "Password",bVisible: true,);
 
   singIn(BuildContext context) async {
     try {
@@ -55,11 +55,11 @@ class Login2 extends StatelessWidget{
   }
 
 
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+
       body: Stack(
 
         children:  [
@@ -67,13 +67,15 @@ class Login2 extends StatelessWidget{
           Positioned.fill(child: Image.asset('assets/Login2.jpg',
             fit: BoxFit.cover,)),
           Center(
+
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+
               children: [
+                const SizedBox(height: 100),
                 ClipOval(
                   child: Container(
-                      width: 180,
-                      height: 180,
+                      width: 90,
+                      height: 90,
                       color: Colors.transparent,
                       child: const Icon(
                         Icons.account_box_outlined,
@@ -84,7 +86,7 @@ class Login2 extends StatelessWidget{
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 50,right: 50),
+                  padding: const EdgeInsets.only(left: 60,right: 60),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -110,10 +112,8 @@ class Login2 extends StatelessWidget{
                 ,
                 const SizedBox(height: 30),
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 50),
+              padding: const EdgeInsets.only(left: 60,right: 60),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: <Widget>[
                   Container(

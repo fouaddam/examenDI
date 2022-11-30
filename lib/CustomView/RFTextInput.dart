@@ -8,7 +8,7 @@ class RFtextField extends StatelessWidget{
         final String pathImage;
         final bool bVisible;
 
-         RFtextField({super.key,this.Label_text="", this.pathImage="assets/LoginImage.jpg", this.bVisible=true, });
+         RFtextField({super.key,this.Label_text="", this.pathImage="assets/LoginImage.jpg", this.bVisible=false, });
 
 
           String getText_input(){
