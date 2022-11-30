@@ -137,7 +137,6 @@ class Login2 extends StatelessWidget{
             )
             ,
                 const SizedBox(height: 70),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children:  [

@@ -12,8 +12,8 @@ class Register extends StatelessWidget {
 
 
   final RFtextField inputEmail = RFtextField(Label_text:"Email");
-  final RFtextField inputPassword = RFtextField(Label_text:"Password");
-  final RFtextField inputPassword2 = RFtextField(Label_text: "Repite Password",);
+  final RFtextField inputPassword = RFtextField(Label_text:"Password",bVisible: true,);
+  final RFtextField inputPassword2 = RFtextField(Label_text: "Repite Password",bVisible: true);
 
   Register({super.key});
 
