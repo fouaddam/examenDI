@@ -70,12 +70,13 @@ class Login2 extends StatelessWidget{
 
             child: Column(
 
+
               children: [
-                const SizedBox(height: 100),
+                const SizedBox(height: 70),
                 ClipOval(
                   child: Container(
-                      width: 90,
-                      height: 90,
+                      width: 120,
+                      height: 120,
                       color: Colors.transparent,
                       child: const Icon(
                         Icons.account_box_outlined,
@@ -85,6 +86,7 @@ class Login2 extends StatelessWidget{
 
                   ),
                 ),
+                const SizedBox(height: 70),
                 Padding(
                   padding: const EdgeInsets.only(left: 60,right: 60),
                   child: Row(
@@ -134,19 +136,21 @@ class Login2 extends StatelessWidget{
               ),
             )
             ,
-                const SizedBox(height: 30),
+                const SizedBox(height: 70),
 
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children:  [
                     Padding(
-                      padding: const EdgeInsets.only(right: 20),
+
+                      padding: const EdgeInsets.only(right: 30),
                       child: Container(
                         decoration:  const BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("assets/Splash.jpg"),
                               fit: BoxFit.cover),
                         ),
+
                         child: FloatingActionButton.extended(
                           backgroundColor: Colors.transparent,
                           foregroundColor: Colors.white,
