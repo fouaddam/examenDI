@@ -83,6 +83,7 @@ flutter:
     - assets/Splash.jpg
     - assets/Login2.jpg
     - assets/England.png
+    - assets/Splash1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
