@@ -40,7 +40,7 @@ class RFtextField extends StatelessWidget{
 
           ),
 
-        //suffixIcon: const Icon(Icons.favorite),
+        //suffixIcon:  Image.asset(pathImage,scale: 10,)
 
 
       ),
